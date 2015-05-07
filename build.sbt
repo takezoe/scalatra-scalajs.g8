@@ -65,3 +65,5 @@ lazy val server = (project in file("server"))
 .enablePlugins(SbtTwirl)
 //.aggregate(client)
 .dependsOn(commonJvm)
+
+addCommandAlias("compileAll", "; server/compile; client/fastOptJS")
