@@ -1,5 +1,5 @@
 import controller._
-import jp.sf.amateras.scalatra.forms.ValidationJavaScriptProvider
+import io.github.gitbucket.scalatra.forms.ValidationJavaScriptProvider
 import org.scalatra._
 import javax.servlet._
 

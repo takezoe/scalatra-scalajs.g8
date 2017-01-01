@@ -1,7 +1,7 @@
 package controller
 
 import org.scalatra._
-import jp.sf.amateras.scalatra.forms._
+import io.github.gitbucket.scalatra.forms._
 import org.scalatra.json.JacksonJsonSupport
 import org.scalatra.i18n.I18nSupport
 import org.json4s.DefaultFormats

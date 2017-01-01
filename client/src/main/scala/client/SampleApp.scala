@@ -6,7 +6,7 @@ import org.scalajs.jquery.jQuery
 import dom.ext.Ajax
 import scala.concurrent.ExecutionContext.Implicits.global
 import model.Book
-import upickle._
+import upickle.default._
 
 object SampleApp extends JSApp {
   def main(): Unit = {
