@@ -14,7 +14,7 @@ object SampleApp extends JSApp {
       val books = read[Seq[Book]](xhr.responseText)
       val ul = jQuery("ul#books")
       books.foreach { book =>
-        ul.append(s"<li>${book.title} - ${book.author.mkString(", ")}</li>")
+        ul.append(s"<li>$"$"${book.title} - $"$"${book.author.mkString(", ")}</li>")
       }
     }
   }

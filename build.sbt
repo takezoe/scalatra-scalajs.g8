@@ -4,8 +4,8 @@ import sbt.Project.projectToRef
 //val Organization = "organization"
 //val Name = "name"
 //val Version = "0.0.1"
-lazy val ScalaVersion = "2.12.1"
-lazy val ScalatraVersion = "2.5.0"
+lazy val ScalaVersion = "$scala_version$"
+lazy val ScalatraVersion = "$scalatra_version$"
 
 lazy val common = (crossProject.crossType(CrossType.Pure) in file("common"))
 .settings(scalaVersion := ScalaVersion)
@@ -47,8 +47,6 @@ lazy val server = (project in file("server"))
       "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
       "org.scalatra" %% "scalatra-json" % ScalatraVersion,
       "org.json4s" %% "json4s-jackson" % "3.5.0",
-      "io.github.gitbucket" %% "scalatra-forms" % "1.1.0",
-      "com.typesafe.slick" %% "slick" % "3.2.0-M2",
       "org.eclipse.jetty" % "jetty-webapp" % "9.3.9.v20160517" % "container;provided",
       "javax.servlet" % "javax.servlet-api" % "3.1.0" % "container;provided;test"
     ),

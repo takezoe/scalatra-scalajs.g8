@@ -1,13 +1,12 @@
 package controller
 
 import org.scalatra._
-import io.github.gitbucket.scalatra.forms._
 import org.scalatra.json.JacksonJsonSupport
 import org.scalatra.i18n.I18nSupport
 import org.json4s.DefaultFormats
 import model.Book
 
-class IndexController extends ScalatraFilter with JacksonJsonSupport with I18nSupport with ClientSideValidationFormSupport {
+class IndexController extends ScalatraFilter with JacksonJsonSupport with I18nSupport {
 
   implicit val jsonFormats = DefaultFormats
 
