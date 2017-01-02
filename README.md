@@ -1,4 +1,4 @@
-scalatra-template
+scalatra-scalajs.g8
 =================
 
 Template project for the web application which is based on Scalatra with Scala.js.
